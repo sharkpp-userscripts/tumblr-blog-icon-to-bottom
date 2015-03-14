@@ -4,7 +4,7 @@
 
 ## インストール
 
-このスクリプトは [Greasy Fork](https://greasyfork.org/ja/scripts/xxxx) のページからインストールすることが出来ます。
+このスクリプトは [Greasy Fork](https://greasyfork.org/ja/scripts/8583-tumblr-blog-icon-to-bottom) のページからインストールすることが出来ます。
 
 インストールおよび実行するには下記のような拡張が必要になります。
 
@@ -19,11 +19,11 @@
 
 このスクリプトを実行すると
 
-![適用前](img/before.png)
+![適用前](https://raw.githubusercontent.com/sharkpp-userscripts/tumblr-blog-icon-to-bottom/master/img/before.png)
 
 と、投稿フォームの上部にあったブログアイコンとブログ名が
 
-![適用後](img/after.png)
+![適用後](https://raw.githubusercontent.com/sharkpp-userscripts/tumblr-blog-icon-to-bottom/master/img/after.png)
 
 と、このようにブログの下部に移動します。
 
