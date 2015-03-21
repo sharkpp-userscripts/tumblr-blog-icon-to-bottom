@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Tumblr. blog icon to bottom
 // @namespace   http://www.sharkpp.net/
-// @version     0.2
+// @version     0.3
 // @description Tumblr. blog icon to bottom in reblog form
 // @author      sharkpp
 // @copyright   2015, sharkpp
@@ -27,17 +27,16 @@
                 !postContainer.getAttribute('data-sharkpp-icon-bottom'))
             {
                 postContainer.setAttribute('data-sharkpp-icon-bottom', true);
-                setTimeout(function(){
-                   var elm = evaluate('//*[@class="post-margin"]', true);
-                        elm.style.cssText = 'bottom:0; top:initial;';
-                    var elm = evaluate('//*[contains(@class,\'post-content\')]', true);
-                        elm.style.cssText = 'top: 5px;';
-                    var elm = evaluate('//*[contains(@class,\'post-header\')]', true);
-                        elm.style.cssText = 'position:absolute; bottom:5px; width:340px;';
-                    var elm = evaluate('//*[@class="post-form--controls"]/*[@class="controls-container"]', true);
-                        elm.style.cssText = 'width:200px; margin-left:340px;';
-                }, 250);
-             }
+                //////////
+                var elm = evaluate('//*[@class="post-margin"]', true);
+                    elm.style.cssText = 'bottom:0; top:initial;';
+                var elm = evaluate('//*[contains(concat(" ",normalize-space(@class)," ")," post-content ")]', true);
+                    elm.style.cssText = 'top: 5px;';
+                var elm = evaluate('//*[contains(concat(" ",normalize-space(@class)," ")," post-header ")]', true);
+                    elm.style.cssText = 'position:absolute; bottom:5px; width:340px;';
+                var elm = evaluate('//*[@class="post-form--controls"]/*[@class="controls-container"]', true);
+                    elm.style.cssText = 'width:200px; margin-left:340px;';
+            }
             setTimeout(fn, 1000);
         };
     setTimeout(fn, 1000);
